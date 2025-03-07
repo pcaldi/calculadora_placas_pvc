@@ -30,7 +30,7 @@ export function Calculadora() {
 
 
 
-    const calcularPlacas = (): void => {
+    function calcularPlacas() {
         // Processa e formata os valores de entrada
         const alturaFormatada = formatarEntrada(altura);
         const larguraFormatada = formatarEntrada(largura);
@@ -72,6 +72,14 @@ export function Calculadora() {
 
         setError('');
     };
+
+    function handleResetResultado() {
+        setAltura('');
+        setLargura('');
+        setTamanhoPlaca('');
+        setResultado(null);
+        setError('');
+    }
 
 
 
@@ -135,6 +143,14 @@ export function Calculadora() {
                         className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
                     >
                         Calcular
+                    </button>
+
+
+                    <button
+                        onClick={handleResetResultado}
+                        className="w-full bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-700 transition-colors"
+                    >
+                        Limpar Resultado
                     </button>
 
                     {error && (

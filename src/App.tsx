@@ -3,9 +3,9 @@ import { Calculadora } from "./components/calculadora"
 function App() {
 
     return (
-        <div>
+        <>
             <Calculadora />
-        </div>
+        </>
     )
 }
 

@@ -150,7 +150,7 @@ export function Calculadora() {
                         onClick={handleResetResultado}
                         className="w-full bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-700 transition-colors"
                     >
-                        Limpar Resultado
+                        Reiniciar
                     </button>
 
                     {error && (

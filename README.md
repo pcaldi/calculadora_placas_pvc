@@ -1,54 +1,39 @@
-# React + TypeScript + Vite
+# Calculadora de Placas de PVC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Preview da Aplicação](./preview.png) <!-- Adicione uma imagem de preview se desejar -->
 
-Currently, two official plugins are available:
+Uma aplicação web para cálculo preciso da quantidade de placas de PVC necessárias para revestimento de superfícies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição
 
-## Expanding the ESLint configuration
+Esta calculadora permite determinar quantas placas de PVC são necessárias para cobrir uma área retangular, considerando:
+- Dimensões da área a ser coberta (altura e largura)
+- Tamanho das placas quadradas
+- Cálculo automático de áreas (em cm² e m²)
+- Conversão de unidades integrada
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Funcionalidades Principais
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+✅ Cálculo preciso com decimais
+✅ Conversão automática cm² → m²
+✅ Validação de entradas numéricas
+✅ Interface responsiva e intuitiva
+✅ Formatação automática de decimais
+✅ Resultados detalhados com múltiplas métricas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Como Usar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Pré-requisitos
+- Node.js (v18 ou superior)
+- npm (v9 ou superior)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Instalação
+```bash
+# Clonar repositório
+git clone https://github.com/seu-usuario/calculadora-pvc.git
+
+# Instalar dependências
+npm install
+
+# Iniciar aplicação
+npm run dev

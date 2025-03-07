@@ -1,6 +1,13 @@
 # Calculadora de Placas de PVC
 
-![Preview da Aplicação](./src/assets/preview.png) <!-- Adicione uma imagem de preview se desejar -->
+![Preview da Aplicação](./src/assets/preview.png)
+
+## 📄 Site
+<a href="https://calculadora-placas-pw8q45esp-pcaldis-projects.vercel.app/" target="_blank">
+Acesse o site da calculadora
+</a>
+
+---
 
 Uma aplicação web para cálculo preciso da quantidade de placas de PVC necessárias para revestimento de superfícies.
 
@@ -29,7 +36,7 @@ Esta calculadora permite determinar quantas placas de PVC são necessárias para
 ### Instalação
 ```bash
 # Clonar repositório
-git clone https://github.com/seu-usuario/calculadora-pvc.git
+git clone https://github.com/seu-usuario/calculadora_placas_pvc.git
 
 # Instalar dependências
 npm install

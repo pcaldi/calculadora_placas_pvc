@@ -65,7 +65,7 @@ Este projeto nasceu de uma necessidade prática: ajudar um amigo que planejava i
 
 <h2 id="site">⭐ Site</h2>
 
-O site está disponível no seguinte endereço [aqui](https://calculadora-placas-pw8q45esp-pcaldis-projects.vercel.app/).
+O site está disponível no seguinte endereço [aqui](https://calculadora-placas-pvc.vercel.app/).
 
 ## Como Usar
 
